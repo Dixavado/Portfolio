@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 
 // Configurar o diretório estático para arquivos públicos
 app.use(express.static(path.join(__dirname, 'views/public')));
-
+ 
 // Definir as rotas
 app.get('/', (req, res) => {
   res.render('index', { title: 'Meu Website' });
